@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D634470A2371385700503A5F /* TMROExtensionObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D63447082371385700503A5F /* TMROExtensionObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D63447112371394200503A5F /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63447102371394200503A5F /* NSObject+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D63447052371385700503A5F /* TMROExtensionObject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMROExtensionObject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63447082371385700503A5F /* TMROExtensionObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMROExtensionObject.h; sourceTree = "<group>"; };
 		D63447092371385700503A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D63447102371394200503A5F /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				D63447082371385700503A5F /* TMROExtensionObject.h */,
 				D63447092371385700503A5F /* Info.plist */,
+				D63447102371394200503A5F /* NSObject+Extensions.swift */,
 			);
 			path = TMROExtensionObject;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					D63447042371385700503A5F = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63447112371394200503A5F /* NSObject+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		D634470E2371385700503A5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7KLRW8RU62;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomorrowideas.TMROExtensionObject;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		D634470F2371385700503A5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7KLRW8RU62;
